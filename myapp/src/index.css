@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 .box{
-  background:url("./images/bg-pattern.svg") center;
+  background:url("./images/bg-pattern.svg") center no-repeat;
+  background-size: cover;
 }
 
 .head{
   background: url("./images/pattern-circles.svg") center no-repeat;
+}
+
+.darkBg{
+  background-color: "#171717";
 }
 
 body {
