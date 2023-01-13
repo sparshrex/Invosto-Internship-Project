@@ -13,7 +13,7 @@ function App() {
     setCheck(!check);
   };
 
-  const handleDark = () => {
+  function handleDark() {
     setDark(!dark);
   };
 
@@ -23,33 +23,33 @@ function App() {
   return (
     <div
       className={
-        dark ? "App bg-[#171717] h-screen" : "App bg-[#F9FAFF] h-screen"
+        dark ? "App bg-[#171717] h-screen" : "App bg-[#ffffffc6] h-screen"
       }
     >
-      <div className="box h-[50vh]">
+      <div className= { dark? "bg-[#171717] h-screen text-white" :"h-[50vh] bg-gray-200"}>
         <div className="flex absolute m-16 tablet:m-8 sm:m-8">
           <h1 className="font-bold text-[1.2rem] mr-4">Mode</h1>
           <Switch
             className="ml-2 mr-6"
-            onChange={(e) => handleDark(e)}
+            onChange={ handleDark}
             checked={dark}
             checkedIcon=""
             uncheckedIcon=""
           />
         </div>
         <div className="head p-24 tablet:p-32 sm:px-24 sm:py-32">
-          <h1 className="text-[#39425b] tablet:text-[2rem] sm:text-[1rem] font-bold">
+          <h1 className="text-[#446cdd] tablet:text-[2rem] sm:text-[1rem] font-bold">
             Simple, traffic based pricing
           </h1>
-          <h1 className="text-[#b3b5bf] tablet:text-[1rem] sm:text-[0.7rem]">
+          <h1 className="text-[#3c55d2] tablet:text-[1rem] sm:text-[0.7rem]">
             Sign-up for our 30-day trial. No credit card required.
           </h1>
         </div>
         <div
           className={
             dark
-              ? "bg-[#262626] desktop:mx-80 l1:mx-48 tablet:mx-8 sm:mx-4 shadow-[0px_5px_10px_#2d4ff4] rounded-lg p-4"
-              : "bg-white desktop:mx-80 l1:mx-48 tablet:mx-8  sm:mx-4 shadow-[0px_5px_10px_lightgrey] rounded-lg p-4"
+              ? "bg-[#262626] desktop:mx-80 l1:mx-48 tablet:mx-8 sm:mx-4 shadow-[0px_3px_10px_#e6e3e3] rounded-lg p-4"
+              : "bg-white desktop:mx-80 l1:mx-48 tablet:mx-8  sm:mx-4 shadow-[0px_5px_10px_#bf6256] rounded-lg p-4"
           }
         >
           <div className="flex tablet:justify-around sm:justify-center pt-8">

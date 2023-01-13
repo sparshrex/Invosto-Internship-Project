@@ -5,6 +5,7 @@
 .box{
   background:url("./images/bg-pattern.svg") center no-repeat;
   background-size: cover;
+  background-color: #efefef;
 }
 
 .head{
